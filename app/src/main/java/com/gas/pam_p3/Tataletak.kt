@@ -141,4 +141,5 @@ fun TataletakBoxColumnRow(modifier: Modifier){
             }
         }
     }
+    Spacer(modifier = modifier.height(10.dp))
 }
