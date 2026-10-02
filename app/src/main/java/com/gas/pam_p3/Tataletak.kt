@@ -2,7 +2,11 @@ package com.gas.pam_p3
 
 import android.R.attr.text
 import android.R.attr.top
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -16,6 +20,19 @@ fun TataletakColumn(modifier: Modifier){
         start = 20.dp,
         end = 20.dp
     )) {
+        Text(text = "komponen1")
+        Text(text = "komponen2")
+        Text(text = "komponen3")
+        Text(text = "komponen4")
+    }
+}
+
+@Composable
+fun TataletakRow(modifier: Modifier){
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ){
         Text(text = "komponen1")
         Text(text = "komponen2")
         Text(text = "komponen3")
