@@ -33,8 +33,13 @@ fun Tataletak(modifier: Modifier){
             Text(
                 text = "Login",
                 color = Color.Blue,
-                fontSize = 40.sp,
+                fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
+            )
+            Text(
+                text = "ini adalah halaman login",
+                fontSize = 16.sp,
+                color = Color.White
             )
         }
     }
