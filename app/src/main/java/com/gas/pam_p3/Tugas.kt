@@ -5,7 +5,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -13,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -28,7 +31,11 @@ fun Tataletak(modifier: Modifier){
             painter = painterResource(id = R.drawable.background),
             contentDescription = "Background",
             contentScale = ContentScale.Crop,
-            modifier = modifier.fillMaxSize()
+            modifier = modifier
+                .fillMaxSize()
+                .blur(
+                    radius = 10.dp
+                )
         )
         Column(modifier = modifier
                 .fillMaxSize()
@@ -46,11 +53,17 @@ fun Tataletak(modifier: Modifier){
                 fontSize = 16.sp,
                 color = Color.White
             )
+
+            Spacer(modifier = modifier.height(50.dp))
+
             Image(
                 painter = painterResource(id = R.drawable.logoumy),
                 contentDescription = "Logo Umy",
                 modifier = modifier.size(100.dp)
             )
+
+            Spacer(modifier = modifier.height(50.dp))
+
             Text(
                 text = "Nama",
                 color = Color.Red,
@@ -60,7 +73,7 @@ fun Tataletak(modifier: Modifier){
             Text(
                 text = "Bagas Satya Widhi",
                 color = Color.Blue,
-                fontSize = 12.sp,
+                fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold
             )
             Text(
@@ -69,11 +82,16 @@ fun Tataletak(modifier: Modifier){
                 fontSize = 18.sp,
                 fontWeight = FontWeight.SemiBold
             )
+
+
+            Spacer(modifier = modifier.height(20.dp))
+
             Image(
                 painter = painterResource(id = R.drawable.bagasbatik),
                 contentDescription = "Self - Potrait",
+                contentScale = ContentScale.Crop,
                 modifier = modifier
-                    .size(200.dp)
+                    .size(300.dp)
                     .clip(CircleShape)
                     .border(4.dp, Color.White, CircleShape)
             )
