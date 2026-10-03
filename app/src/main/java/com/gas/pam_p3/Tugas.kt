@@ -60,6 +60,12 @@ fun Tataletak(modifier: Modifier){
                 fontSize = 12.sp,
                 fontWeight = FontWeight.SemiBold
             )
+            Text(
+                text = "20240140170",
+                color = Color.Black,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.SemiBold
+            )
         }
     }
 }
