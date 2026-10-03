@@ -19,11 +19,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PAM_P3Theme {
-                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
+                Scaffold( modifier = Modifier.fillMaxSize() ) { _ ->
                     // Panggil composable layout utama dengan padding dari Scaffold
-                    Tataletak(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Tataletak(modifier = Modifier)
                 }
             }
         }
