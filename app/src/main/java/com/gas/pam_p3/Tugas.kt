@@ -2,15 +2,18 @@ package com.gas.pam_p3
 
 import android.R.attr.fontWeight
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -65,6 +68,14 @@ fun Tataletak(modifier: Modifier){
                 color = Color.Black,
                 fontSize = 18.sp,
                 fontWeight = FontWeight.SemiBold
+            )
+            Image(
+                painter = painterResource(id = R.drawable.bagasbatik),
+                contentDescription = "Self - Potrait",
+                modifier = modifier
+                    .size(200.dp)
+                    .clip(CircleShape)
+                    .border(4.dp, Color.White, CircleShape)
             )
         }
     }
