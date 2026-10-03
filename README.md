@@ -1,2 +1,5 @@
 Gambar modul
-<img width="415" height="860" alt="image" src="https://github.com/user-attachments/assets/7f28b5ee-e6f6-4330-a1e5-2f25b8d054f6" />
+<img width="420" height="887" alt="image" src="https://github.com/user-attachments/assets/9d5a28e6-e6df-4994-95e8-b3a14d3368ee" />
+
+Gambar Praktikum
+<img width="432" height="891" alt="image" src="https://github.com/user-attachments/assets/e920d448-c94f-46a8-b19c-88cc3a165a26" />
