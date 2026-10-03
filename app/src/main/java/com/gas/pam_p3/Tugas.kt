@@ -47,6 +47,12 @@ fun Tataletak(modifier: Modifier){
                 contentDescription = "Logo Umy",
                 modifier = modifier.size(100.dp)
             )
+            Text(
+                text = "Nama",
+                color = Color.Red,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.SemiBold
+            )
         }
     }
 }
