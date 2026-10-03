@@ -1,5 +1,6 @@
 package com.gas.pam_p3
 
+import android.R.attr.fontWeight
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -51,6 +52,12 @@ fun Tataletak(modifier: Modifier){
                 text = "Nama",
                 color = Color.Red,
                 fontSize = 16.sp,
+                fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                text = "Bagas Satya Widhi",
+                color = Color.Blue,
+                fontSize = 12.sp,
                 fontWeight = FontWeight.SemiBold
             )
         }
